@@ -23,7 +23,8 @@ import {
   Switch,
   Tooltip,
   Pagination,
-  Dialog
+  Dialog,
+  MessageBox
 } from 'element-ui'
 
 Vue.use(Button)
@@ -60,3 +61,5 @@ Vue.use(Tooltip)
 Vue.use(Pagination)
 
 Vue.use(Dialog)
+
+Vue.prototype.$confirm = MessageBox.confirm // confirm需做全局掛載
